@@ -520,6 +520,11 @@ a {
 .timeline-content p {
     color: var(--text-light);
     font-size: 0.95rem;
+    margin-bottom: 12px;
+}
+
+.timeline-content p:last-child {
+    margin-bottom: 0;
 }
 
 /* === PHOTO GRID === */
@@ -619,8 +624,69 @@ a {
 
 .impact-photo img {
     width: 100%;
-    height: 160px;
-    object-fit: cover;
+    height: auto;
+    object-fit: contain;
+}
+
+/* === YOURSTORY FEATURE === */
+.yourstory-feature {
+    background: linear-gradient(135deg, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0.1) 100%);
+    backdrop-filter: blur(10px);
+    border: 2px solid var(--accent);
+    border-radius: 20px;
+    padding: 40px;
+    margin-top: 48px;
+    text-align: center;
+}
+
+.yourstory-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--accent);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 30px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.yourstory-badge i {
+    font-size: 1rem;
+}
+
+.yourstory-feature h3 {
+    font-size: 1.8rem;
+    margin-bottom: 16px;
+    color: white;
+}
+
+.yourstory-feature p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    opacity: 0.95;
+    max-width: 700px;
+    margin: 0 auto 24px;
+}
+
+.yourstory-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: white;
+    color: var(--primary);
+    padding: 14px 28px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.yourstory-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
 }
 
 /* === VALUES SECTION === */
